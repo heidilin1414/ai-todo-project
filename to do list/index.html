@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>互動式虛擬AI網頁</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">林卉柔 訪客‘s SCU</div>
+
+        <ul>
+            <li>首頁</li>
+            <li>功能</li>
+            <li>AI聊天</li>
+            <li>聯絡我</li>
+        </ul>
+
+        <button class="nav-btn">開始對話</button>
+    </nav>
+
+    <section class="hero">
+
+        <div class="left">
+
+            <h1>
+                我的未來，
+                <span>由 AI 主宰</span>
+            </h1>
+
+            <p>
+                這是使用 HTML、CSS、JavaScript
+                製作的互動式虛擬 AI 網頁，
+                可以模擬簡單的人機對話功能。
+            </p>
+
+            <div class="input-group">
+                <input
+                    type="text"
+                    id="userInput"
+                    placeholder="輸入指令，例如：你好、課程、學校">
+                <button onclick="askAI()">發送指令</button>
+            </div>
+
+            <h3 id="response">
+                AI 助理：已啟動【訪客模式】
+            </h3>
+
+            <div class="extra-btns">
+                <button onclick="changeTheme()">變換顏色</button>
+                <button onclick="resetAI()">查看原始碼</button>
+            </div>
+
+        </div>
+
+        <div class="right">
+
+            <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1200"
+                alt="AI">
+
+        </div>
+
+    </section>
+<section class="todo-section">
+
+    <h2>我的待辦事項</h2>
+
+    <input
+        type="text"
+        id="todoInput"
+        placeholder="請輸入待辦事項">
+
+    <input
+        type="datetime-local"
+        id="todoTime">
+
+    <button onclick="addTodo()">
+        新增事項
+    </button>
+
+    <ul id="todoList"></ul>
+
+</section>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

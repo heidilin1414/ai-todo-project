@@ -1,0 +1,190 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:black;
+    color:white;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:20px 80px;
+    background:#111;
+}
+
+.logo{
+    color:#00ff44;
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav ul{
+    display:flex;
+    gap:40px;
+    list-style:none;
+}
+
+nav li{
+    color:#00ff44;
+}
+
+.nav-btn{
+    background:#31bfff;
+    border:none;
+    padding:12px 25px;
+    border-radius:20px;
+    cursor:pointer;
+}
+
+.hero{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:80px;
+}
+
+.left{
+    width:50%;
+}
+
+.left h1{
+    font-size:64px;
+    margin-bottom:20px;
+}
+
+.left span{
+    color:#00ff44;
+}
+
+.left p{
+    color:#cccccc;
+    margin-bottom:30px;
+    line-height:1.8;
+}
+
+.input-group{
+    display:flex;
+    gap:10px;
+    margin-bottom:20px;
+}
+
+.input-group input{
+    flex:1;
+    padding:15px;
+    border:none;
+    border-radius:10px;
+}
+
+.input-group button{
+    padding:15px 20px;
+    background:#31bfff;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+#response{
+    color:#31bfff;
+    margin-bottom:20px;
+}
+
+.extra-btns{
+    display:flex;
+    gap:10px;
+}
+
+.extra-btns button{
+    background:#31bfff;
+    border:none;
+    padding:12px 20px;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+.right{
+    width:45%;
+}
+
+.right img{
+    width:100%;
+    border-radius:25px;
+}
+
+.dark-blue{
+    background:#001933;
+}
+
+@media(max-width:768px){
+
+    .hero{
+        flex-direction:column;
+        padding:30px;
+    }
+
+    .left,
+    .right{
+        width:100%;
+    }
+
+    .left h1{
+        font-size:40px;
+    }
+
+    nav{
+        flex-direction:column;
+        gap:15px;
+    }
+
+}
+.todo-section{
+
+    margin-top:80px;
+
+    background:#111;
+
+    padding:30px;
+
+    border-radius:20px;
+}
+
+.todo-section h2{
+
+    color:#00ff44;
+
+    margin-bottom:20px;
+}
+
+.todo-section input{
+
+    padding:10px;
+
+    margin:5px;
+}
+
+.todo-section button{
+
+    padding:10px 20px;
+
+    cursor:pointer;
+}
+
+.todo-section li{
+
+    margin-top:10px;
+
+    list-style:none;
+
+    padding:10px;
+
+    background:#222;
+
+    border-radius:10px;
+}
